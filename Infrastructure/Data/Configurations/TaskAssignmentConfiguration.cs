@@ -10,7 +10,6 @@ public class TaskAssignmentConfiguration : IEntityTypeConfiguration<TaskAssignme
     {
         builder.HasKey(ta => ta.Id);
 
-        builder.Property(ta => ta.AssignedDate);
         // Relationships
         builder.HasOne(ta => ta.Task)
             .WithMany(t => t.TaskAssignments)
