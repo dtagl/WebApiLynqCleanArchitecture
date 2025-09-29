@@ -57,4 +57,16 @@ public class UserRepo : IUserRepo
         await _context.SaveChangesAsync();
         return true;
     }
+
+    public async Task<User> GetUsersWithMostTasks()
+    {
+        var userWithMostTasks = (from u in _context.Users
+                join t in _context.Tasks on u.Id equals t.UserId
+                group t by u into g
+                orderby g.Count() descending
+                select g.Key)
+            .FirstOrDefault();
+
+        return userWithMostTasks;
+    }
 }

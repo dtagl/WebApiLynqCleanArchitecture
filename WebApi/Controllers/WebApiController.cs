@@ -42,5 +42,10 @@ public class WebApiController: ControllerBase
     {
         return await _userService.Delete(id);
     }
-    
+
+    [HttpGet("GetUsersWithMostTasks")]
+    public async Task<User> GetUsersWithMostTasks()
+    {
+        return await _userService.GetUsersWithMostTasks();
+    }
 }

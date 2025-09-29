@@ -11,6 +11,9 @@ public interface IUserService
     public Task<bool> Create(CreateUserDTO user);
     public Task<bool> Delete(int id);
 
+    public Task<User> GetUsersWithMostTasks();
+
+
 
 
 
@@ -45,4 +48,10 @@ public class UserService : IUserService
     {
         return await _userRepo.Delete(id);
     }
+
+    public async Task<User> GetUsersWithMostTasks()
+    {
+        return await _userRepo.GetUsersWithMostTasks();
+    }
+
 }

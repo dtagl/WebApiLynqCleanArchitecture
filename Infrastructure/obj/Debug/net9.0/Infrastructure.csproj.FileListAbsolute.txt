@@ -17,3 +17,4 @@ C:\Users\denta\Desktop\C#course\Exam2309\WebApi\Infrastructure\obj\Debug\net9.0\
 C:\Users\denta\Desktop\C#course\Exam2309\WebApi\Infrastructure\obj\Debug\net9.0\Infrastructure.pdb
 C:\Users\denta\Desktop\C#course\Exam2309\WebApi\Infrastructure\obj\Debug\net9.0\Infrastructure.genruntimeconfig.cache
 C:\Users\denta\Desktop\C#course\Exam2309\WebApi\Infrastructure\obj\Debug\net9.0\ref\Infrastructure.dll
+C:\Users\denta\Desktop\C#course\Exam2309\WebApi\Infrastructure\obj\Debug\net9.0\Infrastructure.sourcelink.json
